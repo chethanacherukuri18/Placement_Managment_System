@@ -1,0 +1,235 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+
+}
+
+
+
+
+
+
+
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple HTML HomePage</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    
+
+    body {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    
+    /* CSS for main element */
+    .intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 520px;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzchJDw9m51a1UhlENpV_HgyJ87uMxIPsi2Q&usqp=CAU");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .intro h1 {
+      font-family: sans-serif;
+      font-size: 60px;
+      color: #fff;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .intro p {
+      font-size: 20px;
+      color: #d1d1d1;
+      text-transform: uppercase;
+      margin: 20px 0;
+    }
+
+    .intro button {
+      background-color: #5edaf0;
+      color: #000;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
+    }
+
+    .achievements {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 80px;
+    }
+
+    .achievements .work {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .achievements .work i {
+      width: fit-content;
+      font-size: 50px;
+      color: #333333;
+      border-radius: 50%;
+      border: 2px solid #333333;
+      padding: 12px;
+    }
+
+    .achievements .work .work-heading {
+      font-size: 20px;
+      color: #333333;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+
+    .achievements .work .work-text {
+      font-size: 15px;
+      color: #585858;
+      margin: 10px 0;
+    }
+
+    .about-me {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 80px;
+      border-top: 2px solid #eeeeee;
+    }
+
+    .about-me img {
+      width: 500px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .about-me-text h2 {
+      font-size: 30px;
+      color: #333333;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .about-me-text p {
+      font-size: 15px;
+      color: #585858;
+      margin: 10px 0;
+    }
+
+    /* CSS for footer 
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #302f49;
+      padding: 40px 80px;
+    }
+
+    .footer .copy {
+      color: #fff;
+    }
+
+    .bottom-links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 0;
+    }
+
+    .bottom-links .links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .bottom-links .links span {
+      font-size: 20px;
+      color: #fff;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+
+    .bottom-links .links a {
+      text-decoration: none;
+      color: #a1a1a1;
+      padding: 10px 20px;
+    }*/
+  </style>
+</head>
+
+<body>
+ <!---- <header class="header">
+    <a href="#" class="logo">Developer</a>
+    <nav class="nav-items">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>-->
+  <main>
+        <h2>Welcome to the Placement Management System</h2>
+    <div class="intro">
+      <h1>PLACEMENTS</h1>
+            <p>Doing the best at this moment puts you in the best place for the next moment.</p>
+     
+    </div>
+    <div class="achievements">
+      <div class="work">
+        <i class="fas fa-atom"></i>
+        <p class="work-heading">Projects</p>
+                <p class="work-text">Projects lay a very vital role in your interview. It puts up a good impression on interviewers and also let them have an idea about your skills and your knowledge.</p>
+      </div>
+      <div class="work">
+        <i class="fas fa-skiing"></i>
+        <p class="work-heading">Skills</p>
+                <p class="work-text">You may be technically strong, but if you are not comfortable with the people around you, you can never be productive. Teamwork and communication with colleagues and clients are essential. So, during placement drives, companies look for soft skills along with technical skills..</p>
+      </div>
+      <div class="work">
+        <i class="fas fa-ethernet"></i>
+        <p class="work-heading">Network</p>
+                <p class="work-text">networking is important to include a better reputation, increased visibility, a stronger support network, improved business growth, and more impactful connections..</p>
+      </div>
+    </div>
+    <div class="about-me">
+      <div class="about-me-text">
+                <h2>Placement Statistics</h2>
+        <p>This is the graph showing placement statistics.</p>
+      </div>
+            <img src="data:image/png;base64,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" alt="me">
+    </div>
+       <!--- </div>
+        <img src="https://vit.ac.in/sites/default/files/cdc/placement-tracker/7.jpg" alt="me">
+        </div>-->
+
+        <div style="text-align: center;">
+
+            <img width="700" src="https://vit.ac.in/sites/default/files/cdc/placement-tracker/7.jpg">
+
+        </div>
+  </main>
+ 
+</body>
+
+</html>
